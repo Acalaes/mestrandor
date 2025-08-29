@@ -104,9 +104,7 @@ export default function Contato() {
                 <div className="space-y-3">
                   <div>
                     <p className="font-medium">Metodologia Aplicada</p>
-                    <p className="text-sm text-muted-foreground">
-                      Coordenador: Dr. Nério Amboni
-                    </p>
+                    
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Grupo focado em pesquisas sobre metodologias quantitativas e qualitativas 
