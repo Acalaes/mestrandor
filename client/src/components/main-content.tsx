@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -61,11 +62,6 @@ const userTypes = [
 ];
 
 export default function MainContent() {
-  const handleSearchScholarships = () => {
-    console.log("Searching scholarships...");
-    // TODO: Implement scholarship search
-  };
-
   const handleViewDetails = (scholarshipId: number) => {
     console.log("Viewing details for scholarship:", scholarshipId);
     // TODO: Implement scholarship details view
@@ -73,7 +69,8 @@ export default function MainContent() {
 
   const handleSelectUserType = (userType: string) => {
     console.log("User type selected:", userType);
-    // TODO: Implement user type selection and redirect
+    // Redirect to registration page with user type
+    window.location.href = `/cadastro?tipo=${userType}`;
   };
 
   return (
@@ -119,10 +116,12 @@ export default function MainContent() {
         <CardHeader>
           <div className="flex justify-between items-center">
             <CardTitle className="text-2xl">Bolsas Anunciadas</CardTitle>
-            <Button onClick={handleSearchScholarships} data-testid="button-search-scholarships">
-              <Search className="w-4 h-4 mr-2" />
-              Buscar Pesquisa
-            </Button>
+            <Link href="/bolsas">
+              <Button data-testid="button-search-scholarships">
+                <Search className="w-4 h-4 mr-2" />
+                Buscar Pesquisa
+              </Button>
+            </Link>
           </div>
         </CardHeader>
         <CardContent>

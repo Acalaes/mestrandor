@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,10 +7,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Início", href: "#" },
-    { name: "Pesquisa", href: "#" },
-    { name: "Bolsas", href: "#" },
-    { name: "Contato", href: "#" },
+    { name: "Início", href: "/" },
+    { name: "Pesquisa", href: "/pesquisa" },
+    { name: "Bolsas", href: "/bolsas" },
+    { name: "Contato", href: "/contato" },
   ];
 
   return (
@@ -17,20 +18,22 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold" data-testid="logo-title">MESTRANDOR</h1>
-            <span className="text-sm opacity-90 hidden sm:block">Plataforma de Pesquisa Acadêmica</span>
+            <Link href="/" className="flex items-center space-x-4">
+              <h1 className="text-2xl font-bold" data-testid="logo-title">MESTRANDOR</h1>
+              <span className="text-sm opacity-90 hidden sm:block">Plataforma de Pesquisa Acadêmica</span>
+            </Link>
           </div>
           
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="hover:text-blue-200 transition-colors duration-200"
                 data-testid={`nav-link-${item.name.toLowerCase()}`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
           
@@ -50,7 +53,7 @@ export default function Header() {
           <div className="md:hidden pb-4" data-testid="mobile-menu">
             <nav className="space-y-2">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="block hover:text-blue-200 transition-colors duration-200 py-2"
@@ -58,7 +61,7 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

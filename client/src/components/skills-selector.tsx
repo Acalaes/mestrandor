@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -78,14 +79,28 @@ export default function SkillsSelector() {
           </div>
         ))}
         
-        <Button 
-          className="w-full mt-6"
-          onClick={handleFindOpportunities}
-          data-testid="button-find-opportunities"
-        >
-          <Search className="w-4 h-4 mr-2" />
-          Encontrar Oportunidades Compatíveis
-        </Button>
+        <div className="space-y-3 mt-6">
+          <Link href="/pesquisa" className="block">
+            <Button 
+              className="w-full"
+              onClick={handleFindOpportunities}
+              data-testid="button-find-opportunities"
+            >
+              <Search className="w-4 h-4 mr-2" />
+              Encontrar Oportunidades Compatíveis
+            </Button>
+          </Link>
+          
+          <Link href="/cadastro" className="block">
+            <Button 
+              variant="outline"
+              className="w-full"
+              data-testid="button-register"
+            >
+              Cadastre-se na Plataforma
+            </Button>
+          </Link>
+        </div>
       </CardContent>
     </Card>
   );
