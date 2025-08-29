@@ -30,12 +30,6 @@ export default function Footer() {
               Grupo de Pesquisa
             </h4>
             <div className="flex items-center space-x-4">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=96&h=96"
-                alt="Metodologia Aplicada Research Group"
-                className="w-12 h-12 rounded-full"
-                data-testid="research-group-logo"
-              />
               <div>
                 <p className="font-medium text-foreground" data-testid="research-group-name">
                   Metodologia Aplicada
