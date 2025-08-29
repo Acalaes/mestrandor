@@ -28,9 +28,6 @@ export default function Footer() {
                 <p className="font-medium text-foreground" data-testid="research-group-name">
                   Metodologia Aplicada
                 </p>
-                <p className="text-sm text-muted-foreground" data-testid="research-group-leader">
-                  (Dr. Nério Amboni)
-                </p>
               </div>
             </div>
           </div>
