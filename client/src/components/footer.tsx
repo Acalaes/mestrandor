@@ -8,12 +8,6 @@ export default function Footer() {
               DESENVOLVIDO POR:
             </h4>
             <div className="flex items-center space-x-4">
-              <img
-                src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=96&h=96"
-                alt="ESSAG Pós-graduação"
-                className="w-12 h-12 rounded-full"
-                data-testid="essag-logo"
-              />
               <div>
                 <p className="font-medium text-foreground" data-testid="developer-name">
                   Mestrando Alexandre P Calaes
