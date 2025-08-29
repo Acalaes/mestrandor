@@ -92,16 +92,7 @@ export default function Contato() {
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-primary mt-1" />
-                  <div>
-                    <p className="font-medium">Endereço</p>
-                    <p className="text-sm text-muted-foreground">
-                      ESSAG - Escola Superior de Administração e Gestão<br />
-                      São Paulo, SP - Brasil
-                    </p>
-                  </div>
-                </div>
+                
               </CardContent>
             </Card>
 
