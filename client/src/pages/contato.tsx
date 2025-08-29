@@ -51,7 +51,6 @@ export default function Contato() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
@@ -81,9 +80,7 @@ export default function Contato() {
                   <Mail className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">
-                      alexandre.calaes@essag.edu.br
-                    </p>
+                    <p className="text-sm text-muted-foreground">acalaes@gmail.com</p>
                   </div>
                 </div>
                 
@@ -292,7 +289,6 @@ export default function Contato() {
           </div>
         </div>
       </div>
-      
       <Footer />
     </div>
   );
