@@ -12,7 +12,7 @@ Páginas Disponíveis
 🎓 Contexto Acadêmico
 Desenvolvido por
 Alexandre P. Calaes - Mestrando
-ESSAG - Escola Superior de Administração e Gestão
+ESAG - Escola Superior de Administração e Gestão
 
 Grupo de Pesquisa
 Metodologia Aplicada
