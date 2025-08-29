@@ -9,9 +9,7 @@ export default function Footer() {
             </h4>
             <div className="flex items-center space-x-4">
               <div>
-                <p className="font-medium text-foreground" data-testid="developer-name">
-                  Mestrando Alexandre P Calaes
-                </p>
+                <p className="font-medium text-foreground" data-testid="developer-name">Mestre Alexandre P Calaes</p>
                 <p className="text-sm text-muted-foreground" data-testid="institution-name">ESAG - Escola Superior de Administração e Gestão</p>
               </div>
             </div>
