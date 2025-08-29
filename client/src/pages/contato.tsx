@@ -88,9 +88,7 @@ export default function Contato() {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium">Telefone</p>
-                    <p className="text-sm text-muted-foreground">
-                      (11) 3456-7890
-                    </p>
+                    <p className="text-sm text-muted-foreground">(48) 998666777</p>
                   </div>
                 </div>
                 
