@@ -12,9 +12,7 @@ export default function Footer() {
                 <p className="font-medium text-foreground" data-testid="developer-name">
                   Mestrando Alexandre P Calaes
                 </p>
-                <p className="text-sm text-muted-foreground" data-testid="institution-name">
-                  ESSAG - Escola Superior de Administração e Gestão
-                </p>
+                <p className="text-sm text-muted-foreground" data-testid="institution-name">ESAG - Escola Superior de Administração e Gestão</p>
               </div>
             </div>
           </div>
